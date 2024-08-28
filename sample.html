@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+
+    </head>
+    <body>
+        
+            
+   <script>
+       var list1=[];
+       var list2=[];
+       var list3=[];
+       var list4=[];
+       var n=1;
+       var x=0;
+       function AddRow(){
+        var AddRow=document.getElementById("show");
+        var NewRow=AddRow.insertRow(n);
+        list1[x]=document.getElementById(name).value;
+        list2[x]=document.getElementById(lname).value;
+        list3[x]=document.getElementById(email).value;
+        list4[x]=document.getElementById(age).value;
+        list5[x]=document.getElementById(ads).value;
+        list6[x]=document.getElementById(pin).value;
+        var cel1=NewRow.insertcell(0);
+        var cel2=NewRow.insertcell(1);
+        var cel3=NewRow.insertcell(2);
+        var cel4=NewRow.insertcell(3);
+        var cel5=NewRow.insertcell(4);
+        var cel6=NewRow.insertcell(5);
+        cel1.innerHTML=list1[x];
+        cel2.innerHTML=list2[x];
+        cel3.innerHTML=list3[x];
+        cel4.innerHTML=list4[x];
+        cel5.innerHTML=list5[x];
+        cel6.innerHTML=list6[x];
+        n++;
+        x++;
+       }
+    </script>
+            
+        
+    
+        <form id="myForm">
+            <h1>
+                <b>student register form</b>
+                </h1>
+                <table>
+                    <tr>
+                        <td>
+                            <label>name:</label>
+                        </td>
+                        <td>
+                        <input type="text" placeholder="enter your name" name="name" id="name">  
+                        </td>              
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Lastname:</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="enter your Lastname" name="lname" id="lname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>email:</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="enter your email" name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>age:</label>
+                        </td>
+                        <td>
+                            <input type="number" placeholder="enter your age" name="age" id="age">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>address:</label>
+                           
+                        </td>
+                        <td> <input type="text" placeholder="enter your address" name="ads" id="ads"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>pincode:</label>
+                        </td>
+                        <td>
+                            <input type="number" placeholder="enter your pincode" name="pin" id="pin">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <label>gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" name="fem" id="fem">female
+                        <input type="radio" name="gender" name="ma" id="ma">male
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>food:</label>
+                        </td>
+                        <td>
+                            <select>
+                                
+                                <option value="idly">idly</option>
+                                <option value="dosa">dosa</option>
+                                <option value="poori">poori</option>
+                                <option value="pongal">pongal</option>
+                                <option value="chapati">chapati</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>foods:</td>
+                        <td>
+                            <input type="checkbox" id="idly" name="idly" value="foods">
+                            <label for="idly">idly</label>
+                            <input type="checkbox" id="dosa" name="dosa" value="foods">
+                            <label for="dosa">dosa</label>
+                            <input type="checkbox" id="poori" name="poori" value="foods">
+                            <label for="poori">poori</label>
+                            <input type="checkbox" id="pongal" name="pongal" value="foods">
+                            <label for="pongal">pongal</label>
+                            <input type="checkbox" id="chapati" name="chapati" value="foods">
+                            <label for="chapati">chapati</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>state:</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="enter your state">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>country:</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="enter your country">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="submit" name="btn" id="btn" onclick="AddRow">
+                        </td>
+                        <td>
+                            <input type="button" value="reset">
+                        </td>
+                    </tr>
+                </table>
+                <table border="2" id="show">
+                    <tr>
+                        <td>name</td>
+                        <td>lastname</td>
+                        <td>email</td>
+                        <td>age</td>
+                        <td>address</td>
+                        <td>pincode</td>
+                        <td>food</td>
+                        <td>state</td>
+                        <td>country</td>
+                    </tr>
+
+                </table>
+          </form>
+          
+    </body>
+</html>
